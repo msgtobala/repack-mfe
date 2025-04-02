@@ -1,0 +1,14 @@
+{
+  "name": "polaris-mfe",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.7.0",
+  "scripts": {
+    "start": "mprocs -c mprocs/host.yaml",
+    "run:host:android": "pnpm --filter host android",
+    "run:host:ios": "pnpm --filter host ios"
+  },
+  "dependencies": {
+    "mprocs": "^0.7.2"
+  }
+}
