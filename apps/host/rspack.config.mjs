@@ -22,9 +22,9 @@ export default env => {
     resolve: {
       ...Repack.getResolveOptions(),
     },
-    output: {
-      uniqueName: 'polaris-host',
-    },
+    // output: {
+    //   uniqueName: 'polaris-host',
+    // },
     module: {
       rules: [
         ...Repack.getJsTransformRules(),
@@ -35,20 +35,20 @@ export default env => {
       new Repack.RepackPlugin(),
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'host',
+        defaultRuntimePlugins:["@callstack/repack/mf/resolver-plugin","@callstack/repack/mf/core-plugin"],
         dts: false,
         remotes: {
           app1: `app1@http://localhost:3001/${platform}/mf-manifest.json`,
-          app2: `app2@http://localhost:3002/${platform}/mf-manifest.json`,
         },
-        shared: Object.fromEntries(
-          Object.entries(pkj.dependencies).map(([dep, version]) => {
-            console.log(dep, version);
-            return [
-              dep,
-              {singleton: true, eager: true, requiredVersion: version},
-            ];
-          }),
-        ),
+        // shared: Object.fromEntries(
+        //   Object.entries(pkj.dependencies).map(([dep, version]) => {
+        //     console.log(dep, version);
+        //     return [
+        //       dep,
+        //       {singleton: true, eager: true, requiredVersion: version},
+        //     ];
+        //   }),
+        // ),
       }),
     ],
   };

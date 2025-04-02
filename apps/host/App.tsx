@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   ScrollView,
@@ -8,13 +8,12 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {loadRemote} from '@module-federation/runtime';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const MemberCardComponent = React.lazy(() => import('app1/MemberCard'));
-const UpcomingAppointmentsComponent = React.lazy(
-  () => import('app2/UpcomingAppointments'),
-);
+const UpcomingAppointmentsComponent = React.lazy(() => loadRemote('app2/UpcomingAppointments'));
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -62,9 +61,15 @@ function App(): React.JSX.Element {
       <ScrollView style={backgroundStyle}>
         <Section title="App1">
           <MemberCardComponent />
+          {/* <Suspense fallback={<Text>Loading....</Text>}>
+            <MemberCardComponent />
+          </Suspense> */}
         </Section>
         <Section title="App2">
-          <UpcomingAppointmentsComponent />
+          {/* <UpcomingAppointmentsComponent /> */}
+          <Suspense fallback={<Text>Loading....</Text>}>
+            <UpcomingAppointmentsComponent />
+          </Suspense>
         </Section>
       </ScrollView>
     </View>
