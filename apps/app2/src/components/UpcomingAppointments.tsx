@@ -18,7 +18,7 @@ const itemMargin = isMobile ? 10 : 15;
 const appointments = [
   {
     id: '1',
-    doctor: 'Dr. Sarah Thompson',
+    doctor: 'Dr. Sarah Thompsonkwejnln',
     specialty: 'Cardiologist',
     date: 'April 5, 2025',
     time: '10:30 AM',
