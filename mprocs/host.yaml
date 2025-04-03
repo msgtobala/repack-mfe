@@ -8,3 +8,6 @@ procs:
   App2:
     shell: pnpm --filter app2 start
     stop: SIGKILL
+  App3:
+    shell: pnpm --filter app3 start
+    stop: SIGKILL

@@ -14,7 +14,7 @@ export default env => {
     context: __dirname,
     entry: './index.js',
     devServer: {
-      port: 3002,
+      port: 3003,
     },
     experiments: {
       incremental: mode === 'development',
@@ -23,7 +23,7 @@ export default env => {
       ...Repack.getResolveOptions(),
     },
     output: {
-      uniqueName: 'polaris-app2',
+      uniqueName: 'polaris-app3',
     },
     module: {
       rules: [
