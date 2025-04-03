@@ -14,7 +14,6 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const MemberCardComponent = React.lazy(() => import('app1/MemberCard'));
 const UpcomingAppointmentsComponent = React.lazy(() => loadRemote('app2/UpcomingAppointments'));
-
 function App(): React.JSX.Element {
   console.log('App');
   const isDarkMode = useColorScheme() === 'dark';

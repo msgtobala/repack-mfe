@@ -36,7 +36,7 @@ const AppContainer = () => {
       }));
 
       await preloadRemote(preloadConfigs);
-      console.log('Remotes Loaded ✅');
+      console.log(preloadConfigs);
 
       setIsInitialized(true); // Now switch from AppLoading to App
     };
