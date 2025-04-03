@@ -236,9 +236,15 @@ importers:
       '@react-native/babel-preset':
         specifier: 0.78.1
         version: 0.78.1(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))
+      '@react-native/codegen':
+        specifier: ^0.78.2
+        version: 0.78.2(@babel/preset-env@7.26.9(@babel/core@7.26.10))
       '@react-native/eslint-config':
         specifier: 0.78.1
         version: 0.78.1(eslint@8.57.1)(jest@29.7.0(@types/node@22.13.17))(prettier@2.8.8)(typescript@5.0.4)
+      '@react-native/gradle-plugin':
+        specifier: ^0.78.2
+        version: 0.78.2
       '@react-native/metro-config':
         specifier: 0.78.1
         version: 0.78.1(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))
@@ -1380,6 +1386,10 @@ packages:
 
   '@react-native/gradle-plugin@0.78.1':
     resolution: {integrity: sha512-v8GJU+8DzQDWO3iuTFI1nbuQ/kzuqbXv07VVtSIMLbdofHzuuQT14DGBacBkrIDKBDTVaBGAc/baDNsyxCghng==}
+    engines: {node: '>=18'}
+
+  '@react-native/gradle-plugin@0.78.2':
+    resolution: {integrity: sha512-LHgmdrbyK9fcBDdxtn2GLOoDAE+aFHtDHgu6vUZ5CSCi9CMd5Krq8IWAmWjeq+BQr+D1rwSXDAHtOrfJ6qOolA==}
     engines: {node: '>=18'}
 
   '@react-native/js-polyfills@0.78.1':
@@ -6571,6 +6581,8 @@ snapshots:
 
   '@react-native/gradle-plugin@0.78.1': {}
 
+  '@react-native/gradle-plugin@0.78.2': {}
+
   '@react-native/js-polyfills@0.78.1': {}
 
   '@react-native/metro-babel-transformer@0.78.1(@babel/core@7.26.10)(@babel/preset-env@7.26.9(@babel/core@7.26.10))':
@@ -6592,9 +6604,7 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - '@babel/preset-env'
-      - bufferutil
       - supports-color
-      - utf-8-validate
 
   '@react-native/normalize-colors@0.78.1': {}
 
