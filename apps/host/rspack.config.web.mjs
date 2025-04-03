@@ -84,11 +84,9 @@ export default env => {
           },
         },
       ],
+      target: 'web',
     },
     plugins: [
-      new Repack.RepackPlugin({
-        platform: 'web',
-      }),
       new ModuleFederationPlugin({
         name: 'host',
         exposes: {

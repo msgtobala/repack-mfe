@@ -164,25 +164,6 @@ const MemberCard = () => {
             </Text>
           </View>
         </View>
-
-        <View style={styles.infoBox}>
-          <View>
-            <Text style={styles.infoTitle}>Digital ID</Text>
-            <Text style={styles.infoText}>
-              Use your member ID card when visiting the doctor's office or
-              accessing care.
-            </Text>
-          </View>
-        </View>
-        <View style={styles.infoBox}>
-          <View>
-            <Text style={styles.infoTitle}>Download ID</Text>
-            <Text style={styles.infoText}>
-              Select an ID card to download, print, or send to a healthcare
-              professional.
-            </Text>
-          </View>
-        </View>
       </View>
     </ScrollView>
   );
@@ -264,19 +245,6 @@ const styles = StyleSheet.create({
     marginVertical: 15,
   },
   actionButton: {alignItems: 'center', paddingRight: 10},
-  infoBox: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#FFF',
-    padding: 15,
-    margin: 10,
-    borderRadius: 10,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
-  },
-  infoTitle: {fontWeight: 'bold', fontSize: 16},
-  infoText: {color: '#6B7280', marginTop: 5},
 });
 
 export default MemberCard;

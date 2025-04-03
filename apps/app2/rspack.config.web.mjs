@@ -81,16 +81,14 @@ export default env => {
           },
         },
       ],
+      target: 'web',
     },
     plugins: [
-      new Repack.RepackPlugin({
-        platform: 'web',
-      }),
       new ModuleFederationPlugin({
         name: 'app2',
         filename: 'web/mf-manifest.json',
         exposes: {
-          './App': './App.tsx',
+          './UpcomingAppointments': './src/components/UpcomingAppointments',
         },
         shared: Object.fromEntries(
           Object.entries(pkj.dependencies).map(([dep, version]) => [

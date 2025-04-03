@@ -1,6 +1,7 @@
 import React, {Suspense} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -14,7 +15,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const MemberCardComponent = React.lazy(() => import('app1/MemberCard'));
 // const UpcomingAppointmentsComponent = React.lazy(() => import('app2/UpcomingAppointments'));
-//const UpcomingAppointmentsComponent = React.lazy(() => loadRemote('app2/UpcomingAppointments'));
+const UpcomingAppointmentsComponent = React.lazy(() => loadRemote('app2/UpcomingAppointments'));
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -54,26 +55,26 @@ function App(): React.JSX.Element {
   }
 
   return (
-    <View style={backgroundStyle}>
+    <SafeAreaView style={backgroundStyle}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <ScrollView style={backgroundStyle}>
         <Section title="App1">
-          <MemberCardComponent />
-          {/* <Suspense fallback={<Text>Loading....</Text>}>
+          {/* <MemberCardComponent /> */}
+          <Suspense fallback={<Text>Loading....</Text>}>
             <MemberCardComponent />
-          </Suspense> */}
+          </Suspense>
         </Section>
         <Section title="App2">
           {/* <UpcomingAppointmentsComponent /> */}
-          {/* <Suspense fallback={<Text>Loading....</Text>}>
+          <Suspense fallback={<Text>Loading....</Text>}>
             <UpcomingAppointmentsComponent />
-          </Suspense> */}
+          </Suspense>
         </Section>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 

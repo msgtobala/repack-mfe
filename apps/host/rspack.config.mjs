@@ -8,6 +8,10 @@ const __dirname = path.dirname(__filename);
 
 export default env => {
   const {mode, platform = 'ios'} = env;
+  console.log('\n=== RSPACK CONFIG EXECUTION START ===');
+  console.log('This configuration is only executed during build time or dev server startup');
+
+  console.log('=====================================\n');
 
   return {
     mode,

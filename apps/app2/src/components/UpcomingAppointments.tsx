@@ -48,36 +48,24 @@ const appointments = [
 const UpcomingAppointments = () => {
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.header}>Upcoming Appointments</Text>
-      <FlatList
-        data={appointments}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        keyExtractor={item => item.id}
-        contentContainerStyle={styles.listContainer}
-        snapToAlignment="start"
-        decelerationRate="fast"
-        snapToInterval={itemWidth + itemMargin}
-        renderItem={({item}) => (
-          <Card style={[styles.card, {width: itemWidth}]}>
-            <Image source={{uri: item.image}} style={styles.image} />
-            <Card.Content>
-              <Text style={styles.cardTitle}>{item.doctor}</Text>
-              <Text style={styles.specialty}>{item.specialty}</Text>
-              <Text style={styles.date}>{item.date}</Text>
-              <Text style={styles.time}>{item.time}</Text>
-              <Text style={styles.location}>{item.location}</Text>
-            </Card.Content>
-            <Card.Actions>
-              <Button
-                mode="contained"
-                onPress={() => console.log('View Details')}>
-                View
-              </Button>
-            </Card.Actions>
-          </Card>
-        )}
-      />
+      <View style={styles.infoBox}>
+          <View>
+            <Text style={styles.infoTitle}>Digital ID</Text>
+            <Text style={styles.infoText}>
+              Use your member ID card when visiting the doctor's office or
+              accessing care.
+            </Text>
+          </View>
+        </View>
+        <View style={styles.infoBox}>
+          <View>
+            <Text style={styles.infoTitle}>Download ID</Text>
+            <Text style={styles.infoText}>
+              Select an ID card to download, print, or send to a healthcare
+              professional.
+            </Text>
+          </View>
+        </View>
     </ScrollView>
   );
 };
@@ -125,6 +113,19 @@ const styles = StyleSheet.create({
   },
   time: {fontSize: 14, color: '#666', textAlign: 'center'},
   location: {fontSize: 12, color: '#888', textAlign: 'center'},
+  infoBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFF',
+    padding: 15,
+    margin: 10,
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+  },
+  infoTitle: {fontWeight: 'bold', fontSize: 16},
+  infoText: {color: '#6B7280', marginTop: 5},
 });
 
 export default UpcomingAppointments;
