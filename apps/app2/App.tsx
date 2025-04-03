@@ -8,35 +8,31 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {PaperProvider} from 'react-native-paper';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 import UpcomingAppointments from './src/components/UpcomingAppointments';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: '#fff',
   };
 
   const safePadding = '5%';
 
   return (
-    <View style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView style={backgroundStyle}>
-        <UpcomingAppointments />
-      </ScrollView>
-    </View>
+    <PaperProvider>
+      <View style={backgroundStyle}>
+        <StatusBar
+          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+          backgroundColor={backgroundStyle.backgroundColor}
+        />
+        <ScrollView style={backgroundStyle}>
+          <UpcomingAppointments />
+        </ScrollView>
+      </View>
+    </PaperProvider>
   );
 }
 

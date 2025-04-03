@@ -93,9 +93,9 @@ const MemberCard = () => {
               <Image source={{uri: item.image}} style={styles.image} />
               <Text style={styles.cardTitle}>{item.title}</Text>
               <Text style={styles.cardDescription}>{item.description}</Text>
-              <Chip icon="information" onPress={() => console.log('Pressed')}>
+              {/* <Chip icon="information" onPress={() => console.log('Pressed')}>
                 {item.title}
-              </Chip>
+              </Chip> */}
             </View>
           )}
         />

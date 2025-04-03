@@ -1,7 +1,9 @@
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import * as Repack from '@callstack/repack';
-import pkj from './package.json' with { type: 'json' };
+import {createRequire} from 'module';
+const require = createRequire(import.meta.url);
+const pkg = require('./package.json');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -41,7 +43,7 @@ export default env => {
           './MemberCard': './src/components/MemberCard',
         },
         shared: Object.fromEntries(
-          Object.entries(pkj.dependencies).map(([dep, version]) => {
+          Object.entries(pkg.dependencies).map(([dep, version]) => {
             return [
               dep,
               {singleton: true, eager: true, requiredVersion: version},
