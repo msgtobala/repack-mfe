@@ -1,0 +1,16 @@
+procs:
+  host-web:
+    cmd: ["pnpm", "--filter", "host", "web"]
+    env:
+      NODE_ENV: development
+      PORT: "3000"
+  app1-web:
+    cmd: ["pnpm", "--filter", "app1", "web"]
+    env:
+      NODE_ENV: development
+      PORT: "3001"
+  app2-web:
+    cmd: ["pnpm", "--filter", "app2", "web"]
+    env:
+      NODE_ENV: development
+      PORT: "3002" 
