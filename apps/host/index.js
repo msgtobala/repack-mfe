@@ -1,42 +1,54 @@
-import {AppRegistry} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { AppRegistry } from 'react-native';
 import App from './App';
-import {name as appName} from './app.json';
-import {init, preloadRemote} from '@module-federation/runtime';
-
+import AppLoading from './AppLoading';
+import { name as appName } from './app.json';
+import { init, preloadRemote } from '@module-federation/runtime';
 
 const fetchRemotesConfig = async () => {
   try {
-    const response = await fetch('https://catfact.ninja/fact');
-    console.log(response);
-    // const remotes = await response.json();
+    const response = await fetch('http://127.0.0.1:5501/index.json');
+    const remotes = await response.json();
+    console.log('Fetched remotes:', remotes);
     return remotes;
   } catch (error) {
-    console.error(error);
+    console.error('Error fetching remotes:', error);
     return [];
   }
 };
 
+const AppContainer = () => {
+  const [isInitialized, setIsInitialized] = useState(false);
 
-const initializeApp = async () => {
-  const remotes = await fetchRemotesConfig();
-  
-  init({
-    name: 'host',
-    remotes,
-  });
+  useEffect(() => {
+    const initializeApp = async () => {
+      const remotes = await fetchRemotesConfig();
 
-  // Preload all remotes
-  const preloadConfigs = remotes.map(remote => ({
-    nameOrAlias: remote.name,
-    resourceCategory: 'all',
-  }));
+      init({
+        name: 'host',
+        remotes,
+      });
 
-  preloadRemote(preloadConfigs);
+      // Preload all remotes
+      const preloadConfigs = remotes.map(remote => ({
+        nameOrAlias: remote.name,
+        resourceCategory: 'all',
+      }));
+
+      await preloadRemote(preloadConfigs);
+      console.log('Remotes Loaded ✅');
+
+      setIsInitialized(true); // Now switch from AppLoading to App
+    };
+
+    initializeApp().catch(console.error);
+  }, []);
+
+  return isInitialized ? <App /> : <AppLoading />;
 };
 
-initializeApp().catch(console.error);
+AppRegistry.registerComponent(appName, () => AppContainer);
 
-AppRegistry.registerComponent(appName, () => App);
 
 // Old code with working runtime and compile time
 

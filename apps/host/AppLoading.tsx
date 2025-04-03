@@ -12,11 +12,7 @@ import {loadRemote} from '@module-federation/runtime';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-const MemberCardComponent = React.lazy(() => import('app1/MemberCard'));
-const UpcomingAppointmentsComponent = React.lazy(() => loadRemote('app2/UpcomingAppointments'));
-
-function App(): React.JSX.Element {
-  console.log('App');
+function AppLoading(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -60,18 +56,7 @@ function App(): React.JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <ScrollView style={backgroundStyle}>
-        <Section title="App1">
-          <MemberCardComponent />
-          {/* <Suspense fallback={<Text>Loading....</Text>}>
-            <MemberCardComponent />
-          </Suspense> */}
-        </Section>
-        <Section title="App2">
-          {/* <UpcomingAppointmentsComponent /> */}
-          <Suspense fallback={<Text>Loading....</Text>}>
-            <UpcomingAppointmentsComponent />
-          </Suspense>
-        </Section>
+        <Section title="App1">Loading...</Section>
       </ScrollView>
     </View>
   );
@@ -96,4 +81,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default AppLoading;
