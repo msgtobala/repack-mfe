@@ -7,7 +7,7 @@ import { init, preloadRemote } from '@module-federation/runtime';
 
 const fetchRemotesConfig = async () => {
   try {
-    const response = await fetch('http://127.0.0.1:5501/index.json');
+    const response = await fetch('https://polaris.wiremockapi.cloud/remotes');
     const remotes = await response.json();
     console.log('Fetched remotes:', remotes);
     return remotes;
