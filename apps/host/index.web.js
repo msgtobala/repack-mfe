@@ -53,7 +53,7 @@ const AppContainer = () => {
 
 AppRegistry.registerComponent(name, () => AppContainer);
 
-AppRegistry.registerComponent(name, () => App);
+// AppRegistry.registerComponent(name, () => App);
 AppRegistry.runApplication(name, {
   initialProps: {},
   rootTag: document.getElementById('app-root'),
