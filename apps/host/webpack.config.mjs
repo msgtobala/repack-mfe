@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import {createRequire} from 'module';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import {ModuleFederationPlugin} from '@module-federation/enhanced/webpack';
 const require = createRequire(import.meta.url);
 const pkg = require('./package.json');
 const appDirectory = path.resolve(import.meta.dirname);
@@ -9,7 +10,7 @@ const {presets, plugins} = require(`${appDirectory}/babel.config.js`);
 const compileNodeModules = [].map(moduleName =>
   path.resolve(appDirectory, `node_modules/${moduleName}`),
 );
-const {ModuleFederationPlugin} = require('webpack').container;
+// const {ModuleFederationPlugin} = require('webpack').container;
 
 const diabledPackages = ['@module-federation/runtime'];
 
@@ -21,7 +22,7 @@ const babelLoaderConfiguration = {
     path.resolve(appDirectory, 'component'),
     ...compileNodeModules,
   ],
-  exclude: /node_modules/,
+  exclude: /node_modules\/(?!react-native)/,
   use: {
     loader: 'babel-loader',
     options: {
@@ -69,6 +70,7 @@ export default {
     extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
     alias: {
       'react-native$': 'react-native-web',
+      'react-native/Libraries/NewAppScreen': false, // Ignore it entirely
     },
   },
   module: {
@@ -87,7 +89,7 @@ export default {
       name: 'host',
       filename: 'host.container.bundle',
       remotes: {
-        app1: `app1@http://localhost:3011/app1.container.bundle`,
+        app1: `app1@http://localhost:3011/mf-manifest.json`,
       },
       shared: Object.fromEntries(
         Object.entries(pkg.dependencies)

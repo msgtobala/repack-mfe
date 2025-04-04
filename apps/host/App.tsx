@@ -11,11 +11,23 @@ import {
 import {loadRemote} from '@module-federation/runtime';
 
 const MemberCardComponent = React.lazy(() => import('app1/MemberCard'));
-const UpcomingAppointmentsComponent = React.lazy(() =>
-  loadRemote('app2/UpcomingAppointments'),
-);
+// const UpcomingAppointmentsComponent = React.lazy(() =>
+//   loadRemote('app2/UpcomingAppointments'),
+// );
 
+const UpcomingAppointmentsComponent = React.lazy(async () => {
+  let remoteModule = await loadRemote<{default: React.ComponentType<any>}>(
+    'app2/UpcomingAppointments',
+  );
+
+  if (!remoteModule) {
+    throw new Error('Failed to load MemberCardComponent');
+  }
+
+  return remoteModule;
+});
 function App(): React.JSX.Element {
+  console.log('App');
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {

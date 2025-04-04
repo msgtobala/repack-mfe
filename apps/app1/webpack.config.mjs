@@ -1,11 +1,14 @@
 import path from 'path';
+import {writeFileSync} from 'fs';
 import webpack from 'webpack';
 import {createRequire} from 'module';
+import {ModuleFederationPlugin} from '@module-federation/enhanced/webpack';
+
 const require = createRequire(import.meta.url);
 const pkg = require('./package.json');
 const appDirectory = path.resolve(import.meta.dirname);
 const {presets, plugins} = require(`${appDirectory}/babel.config.js`);
-const {ModuleFederationPlugin} = require('webpack').container;
+// const {ModuleFederationPlugin} = require('webpack').container;
 
 const compileNodeModules = [].map(moduleName =>
   path.resolve(appDirectory, `node_modules/${moduleName}`),
@@ -63,6 +66,15 @@ export default {
     app: path.join(appDirectory, 'index.web.js'),
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: {
+      directory: path.join(appDirectory, 'dist'),
+    },
+    compress: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+  },
   resolve: {
     extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
     alias: {
@@ -77,6 +89,9 @@ export default {
       tsLoaderConfiguration,
     ],
   },
+  output: {
+    publicPath: 'auto',
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({__DEV__: JSON.stringify(true)}),
@@ -86,6 +101,27 @@ export default {
       exposes: {
         './MemberCard': './src/components/MemberCard',
       },
+      disableTypeGeneration: true,
+      manifest: {
+        fileName: 'mf-manifest.json', // Ensure fileName is correctly set
+        filePath: path.resolve(appDirectory, 'dist'),
+        disableAssetsAnalyze: false, // ✅ Allow asset analysis
+        additionalData: async options => {
+          try {
+            const statsJson = JSON.stringify(options.stats, null, 2);
+            const manifestPath = path.resolve(
+              appDirectory,
+              'dist/mf-manifest.json',
+            );
+            writeFileSync(manifestPath, statsJson, 'utf-8');
+            console.log(`✅ Stats written to ${manifestPath}`);
+            return options.stats;
+          } catch (error) {
+            console.error('❌ Error writing stats:', error);
+          }
+        },
+      },
+      dts: false,
       shared: Object.fromEntries(
         Object.entries(pkg.dependencies).map(([dep, {version}]) => [
           dep,

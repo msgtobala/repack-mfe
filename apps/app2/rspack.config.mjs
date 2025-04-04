@@ -42,6 +42,10 @@ export default env => {
         exposes: {
           './UpcomingAppointments': './src/components/UpcomingAppointments',
         },
+        defaultRuntimePlugins: [
+          '@callstack/repack/mf/resolver-plugin',
+          '@callstack/repack/mf/core-plugin',
+        ],
         shared: Object.fromEntries(
           Object.entries(pkg.dependencies).map(([dep, version]) => {
             return [

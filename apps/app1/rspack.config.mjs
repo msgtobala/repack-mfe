@@ -39,6 +39,7 @@ export default env => {
         name: 'app1',
         dts: false,
         filename: 'app1.container.js.bundle',
+        defaultRuntimePlugins: ["@callstack/repack/mf/resolver-plugin", "@callstack/repack/mf/core-plugin"],
         exposes: {
           './MemberCard': './src/components/MemberCard',
         },

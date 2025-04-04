@@ -7,8 +7,9 @@ import {
   StyleSheet,
   Image,
   ScrollView,
+  Button,
 } from 'react-native';
-import {Button, Card} from 'react-native-paper';
+// import {Button, Card} from 'react-native-paper';
 
 const {width} = Dimensions.get('window');
 const isMobile = width < 768;
@@ -48,7 +49,7 @@ const appointments = [
 const UpcomingAppointments = () => {
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.header}>Upcoming Appointments</Text>
+      <Text style={styles.header}>Upcoming Appointments App 2</Text>
       <FlatList
         data={appointments}
         horizontal
@@ -59,23 +60,19 @@ const UpcomingAppointments = () => {
         decelerationRate="fast"
         snapToInterval={itemWidth + itemMargin}
         renderItem={({item}) => (
-          <Card style={[styles.card, {width: itemWidth}]}>
+          <View style={[styles.card, {width: itemWidth}]}>
             <Image source={{uri: item.image}} style={styles.image} />
-            <Card.Content>
+            <View>
               <Text style={styles.cardTitle}>{item.doctor}</Text>
               <Text style={styles.specialty}>{item.specialty}</Text>
               <Text style={styles.date}>{item.date}</Text>
               <Text style={styles.time}>{item.time}</Text>
               <Text style={styles.location}>{item.location}</Text>
-            </Card.Content>
-            <Card.Actions>
-              <Button
-                mode="contained"
-                onPress={() => console.log('View Details')}>
-                View
-              </Button>
-            </Card.Actions>
-          </Card>
+            </View>
+            <View>
+              <Button title="View" />
+            </View>
+          </View>
         )}
       />
     </ScrollView>

@@ -8,7 +8,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {PaperProvider} from 'react-native-paper';
 
 import UpcomingAppointments from './src/components/UpcomingAppointments';
 
@@ -22,17 +21,15 @@ function App(): React.JSX.Element {
   const safePadding = '5%';
 
   return (
-    <PaperProvider>
-      <View style={backgroundStyle}>
-        <StatusBar
-          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-          backgroundColor={backgroundStyle.backgroundColor}
-        />
-        <ScrollView style={backgroundStyle}>
-          <UpcomingAppointments />
-        </ScrollView>
-      </View>
-    </PaperProvider>
+    <View style={backgroundStyle}>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+      />
+      <ScrollView style={backgroundStyle}>
+        <UpcomingAppointments />
+      </ScrollView>
+    </View>
   );
 }
 
