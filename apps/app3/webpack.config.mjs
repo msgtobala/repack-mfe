@@ -1,5 +1,4 @@
 import path from 'path';
-import {writeFileSync} from 'fs';
 import webpack from 'webpack';
 import {createRequire} from 'module';
 import {ModuleFederationPlugin} from '@module-federation/enhanced/webpack';
@@ -103,25 +102,6 @@ export default {
         './UpcomingAppointments': './src/components/UpcomingAppointments',
       },
       disableTypeGeneration: true,
-      manifest: {
-        fileName: 'mf-manifest.json', // Ensure fileName is correctly set
-        filePath: path.resolve(appDirectory, 'dist'),
-        disableAssetsAnalyze: false, // ✅ Allow asset analysis
-        additionalData: async options => {
-          try {
-            const statsJson = JSON.stringify(options.stats, null, 2);
-            const manifestPath = path.resolve(
-              appDirectory,
-              'dist/mf-manifest.json',
-            );
-            writeFileSync(manifestPath, statsJson, 'utf-8');
-            console.log(`✅ Stats written to ${manifestPath}`);
-            return options.stats;
-          } catch (error) {
-            console.error('❌ Error writing stats:', error);
-          }
-        },
-      },
       dts: false,
       shared: Object.fromEntries(
         Object.entries(pkg.dependencies).map(([dep, {version}]) => [

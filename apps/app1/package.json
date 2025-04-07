@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "start:web": "webpack serve --mode=development  --port 3011 --config webpack.config.mjs",
+    "build:web": "webpack build --config webpack.config.mjs",
     "test": "jest",
     "pods": "(cd ios && bundle install && bundle exec pod install)"
   },
