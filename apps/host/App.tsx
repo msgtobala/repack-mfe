@@ -10,16 +10,28 @@ import {
 } from 'react-native';
 import {loadRemote} from '@module-federation/runtime';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-
 const MemberCardComponent = React.lazy(() => import('app1/MemberCard'));
-const UpcomingAppointmentsComponent = React.lazy(() => loadRemote('app2/UpcomingAppointments'));
+// const UpcomingAppointmentsComponent = React.lazy(() =>
+//   loadRemote('app2/UpcomingAppointments'),
+// );
 
+const UpcomingAppointmentsComponent = React.lazy(async () => {
+  let remoteModule = await loadRemote<{default: React.ComponentType<any>}>(
+    'app2/UpcomingAppointments',
+  );
+
+  if (!remoteModule) {
+    throw new Error('Failed to load MemberCardComponent');
+  }
+
+  return remoteModule;
+});
 function App(): React.JSX.Element {
+  console.log('App');
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: '#fff',
   };
 
   type SectionProps = PropsWithChildren<{
@@ -30,24 +42,8 @@ function App(): React.JSX.Element {
     const isDarkMode = useColorScheme() === 'dark';
     return (
       <View style={styles.sectionContainer}>
-        <Text
-          style={[
-            styles.sectionTitle,
-            {
-              color: isDarkMode ? Colors.white : Colors.black,
-            },
-          ]}>
-          {title}
-        </Text>
-        <Text
-          style={[
-            styles.sectionDescription,
-            {
-              color: isDarkMode ? Colors.light : Colors.dark,
-            },
-          ]}>
-          {children}
-        </Text>
+        <Text>{title}</Text>
+        <Text>{children}</Text>
       </View>
     );
   }
@@ -60,10 +56,10 @@ function App(): React.JSX.Element {
       />
       <ScrollView style={backgroundStyle}>
         <Section title="App1">
-          <MemberCardComponent />
-          {/* <Suspense fallback={<Text>Loading....</Text>}>
+          {/* <MemberCardComponent /> */}
+          <Suspense fallback={<Text>Loading....</Text>}>
             <MemberCardComponent />
-          </Suspense> */}
+          </Suspense>
         </Section>
         <Section title="App2">
           {/* <UpcomingAppointmentsComponent /> */}

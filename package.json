@@ -5,6 +5,7 @@
   "packageManager": "pnpm@10.7.0",
   "scripts": {
     "start": "mprocs -c mprocs/host.yaml",
+    "start:web": "mprocs -c mprocs/host-web.yaml",
     "run:host:android": "pnpm --filter host android",
     "run:host:ios": "pnpm --filter host ios"
   },

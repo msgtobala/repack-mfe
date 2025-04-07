@@ -3,3 +3,6 @@ apps/host/node_modules
 apps/app1/node_modules
 apps/app2/node_modules
 *.log
+.DS_Store
+dist/
+@mf-types/

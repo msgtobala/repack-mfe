@@ -1,0 +1,13 @@
+procs:
+  Host:
+    shell: pnpm --filter host start:web
+    stop: SIGKILL
+  App1:
+    shell: pnpm --filter app1 start:web
+    stop: SIGKILL
+  App2:
+    shell: pnpm --filter app2 start:web
+    stop: SIGKILL
+  App3:
+    shell: pnpm --filter app3 start:web
+    stop: SIGKILL
