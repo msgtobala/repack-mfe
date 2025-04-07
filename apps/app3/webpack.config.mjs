@@ -3,11 +3,11 @@ import {writeFileSync} from 'fs';
 import webpack from 'webpack';
 import {createRequire} from 'module';
 import {ModuleFederationPlugin} from '@module-federation/enhanced/webpack';
-
 const require = createRequire(import.meta.url);
 const pkg = require('./package.json');
 const appDirectory = path.resolve(import.meta.dirname);
 const {presets, plugins} = require(`${appDirectory}/babel.config.js`);
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 // const {ModuleFederationPlugin} = require('webpack').container;
 
 const compileNodeModules = [].map(moduleName =>
@@ -26,7 +26,6 @@ const babelLoaderConfiguration = {
   use: {
     loader: 'babel-loader',
     options: {
-      presets: ['module:metro-react-native-babel-preset'],
       cacheDirectory: true,
       sourceMaps: true,
       presets,
@@ -79,6 +78,7 @@ export default {
     extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
     alias: {
       'react-native$': 'react-native-web',
+      'react-native-vector-icons$': 'react-native-vector-icons/dist/index.js',
     },
   },
   module: {
@@ -93,19 +93,20 @@ export default {
     publicPath: 'auto',
   },
   plugins: [
+    new HtmlWebpackPlugin({template: path.join(appDirectory, 'index.html')}),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({__DEV__: JSON.stringify(true)}),
     new ModuleFederationPlugin({
-      name: 'app1',
-      filename: 'app1.container.bundle',
+      name: 'app3',
+      filename: 'app3.container.js',
       exposes: {
-        './MemberCard': './src/components/MemberCard',
+        './UpcomingAppointments': './src/components/UpcomingAppointments',
       },
       disableTypeGeneration: true,
       manifest: {
-        fileName: 'mf-manifest.json',
+        fileName: 'mf-manifest.json', // Ensure fileName is correctly set
         filePath: path.resolve(appDirectory, 'dist'),
-        disableAssetsAnalyze: false,
+        disableAssetsAnalyze: false, // ✅ Allow asset analysis
         additionalData: async options => {
           try {
             const statsJson = JSON.stringify(options.stats, null, 2);
