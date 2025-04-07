@@ -4,9 +4,8 @@
   "private": true,
   "packageManager": "pnpm@10.7.0",
   "scripts": {
-    "start": "mprocs -c mprocs/host.yaml",
-    "run:host:android": "pnpm --filter host android",
-    "run:host:ios": "pnpm --filter host ios"
+    "start": "mprocs -c mprocs/start.yaml",
+    "bundle:remotes": "pnpm run --parallel -r bundle"
   },
   "dependencies": {
     "mprocs": "^0.7.2"

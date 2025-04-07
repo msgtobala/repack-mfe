@@ -1,0 +1,10 @@
+procs:
+  App1:
+    shell: pnpm --filter app1 bundle
+    stop: SIGKILL
+  App2:
+    shell: pnpm --filter app2 bundle
+    stop: SIGKILL
+  App3:
+    shell: pnpm --filter app3 bundle
+    stop: SIGKILL

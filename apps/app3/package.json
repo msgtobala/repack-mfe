@@ -8,7 +8,10 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "pods": "(cd ios && bundle install && bundle exec pod install)"
+    "pods": "(cd ios && bundle install && bundle exec pod install)",
+    "bundle": "pnpm run bundle:ios && pnpm run bundle:android",
+    "bundle:ios": "react-native bundle --platform ios --entry-file index.js --dev false",
+    "bundle:android": "react-native bundle --platform android --entry-file index.js --dev false"
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.10.0",
