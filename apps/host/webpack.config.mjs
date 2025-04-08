@@ -12,7 +12,12 @@ const compileNodeModules = [].map(moduleName =>
 );
 // const {ModuleFederationPlugin} = require('webpack').container;
 
-const diabledPackages = ['@module-federation/runtime'];
+const diabledPackages = [
+  '@module-federation/runtime',
+  '@react-navigation/elements',
+  '@react-navigation/native',
+  '@react-navigation/native-stack',
+];
 
 const babelLoaderConfiguration = {
   test: /\.[jt]sx?$/,
@@ -65,6 +70,9 @@ export default {
   entry: {
     app: path.join(appDirectory, 'index.web.js'),
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   devtool: 'inline-source-map',
   resolve: {
     extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
@@ -79,6 +87,14 @@ export default {
       imageLoaderConfiguration,
       svgLoaderConfiguration,
       tsLoaderConfiguration,
+      {
+        test: /\.[jt]sx?$/,
+        resolve: {
+          fullySpecified: false,
+        },
+        include:
+          /node_modules\/(@react-navigation|react-native-screens|react-native-safe-area-context)/,
+      },
     ],
   },
   plugins: [
@@ -88,9 +104,7 @@ export default {
     new ModuleFederationPlugin({
       name: 'host',
       filename: 'host.container.bundle',
-      remotes: {
-        app1: `app1@http://localhost:3011/mf-manifest.json`,
-      },
+      remotes: {},
       shared: Object.fromEntries(
         Object.entries(pkg.dependencies)
           .filter(([dep]) => !diabledPackages.includes(dep))

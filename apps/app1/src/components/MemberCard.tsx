@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Image,
   ScrollView,
+  Button,
 } from 'react-native';
 import {Chip} from 'react-native-paper';
 
@@ -93,6 +94,7 @@ const MemberCard = () => {
               <Image source={{uri: item.image}} style={styles.image} />
               <Text style={styles.cardTitle}>{item.title}</Text>
               <Text style={styles.cardDescription}>{item.description}</Text>
+              <Button title="Hello" onPress={() => console.log('Pressed')} />
               {/* <Chip icon="information" onPress={() => console.log('Pressed')}>
                 {item.title}
               </Chip> */}
@@ -171,9 +173,7 @@ const MemberCard = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 10,
     backgroundColor: '#F4F4F4',
-    paddingTop: 15,
   },
   card: {
     padding: 20,
@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     marginVertical: 15,
   },
-  actionButton: {alignItems: 'center', paddingRight: 10}
+  actionButton: {alignItems: 'center', paddingRight: 10},
 });
 
 export default MemberCard;

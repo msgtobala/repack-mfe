@@ -6,3 +6,4 @@ apps/app2/node_modules
 .DS_Store
 dist/
 @mf-types/
+.vscode
