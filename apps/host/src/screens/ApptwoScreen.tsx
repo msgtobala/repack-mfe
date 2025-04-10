@@ -1,29 +1,24 @@
 import {Suspense} from 'react';
-import {StatusBar, Text, View} from 'react-native';
+import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import Section from '../common/Section';
 
 import loadRemoteComponent from '../utils/loadRemote';
 
-const UpcomingAppointmentsComponent = loadRemoteComponent(
-  'app2/UpcomingAppointments',
-);
+const Claims = loadRemoteComponent('app2/Claims');
 
 const ApptwoScreen = () => {
-  const backgroundStyle = {
-    backgroundColor: '#fff',
-  };
   return (
-    <View style={backgroundStyle}>
-      <StatusBar backgroundColor={backgroundStyle.backgroundColor} />
-      <View>
-        <Section title="App2">
-          <Suspense fallback={<Text>Loading....</Text>}>
-            <UpcomingAppointmentsComponent />
-          </Suspense>
-        </Section>
-      </View>
-    </View>
+    <Suspense fallback={<Text>Loading....</Text>}>
+      <Claims />
+    </Suspense>
   );
 };
+const styles = StyleSheet.create({
+  container: {
+    padding: 16,
+    backgroundColor: '#fff',
+    flex: 1,
+  },
+});
 
 export default ApptwoScreen;

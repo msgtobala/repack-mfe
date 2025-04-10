@@ -71,6 +71,7 @@ export default {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.web.tsx', '.web.ts', '.tsx', '.ts', '.web.js', '.js'],
@@ -85,6 +86,14 @@ export default {
       imageLoaderConfiguration,
       svgLoaderConfiguration,
       tsLoaderConfiguration,
+      {
+        test: /\.[jt]sx?$/,
+        resolve: {
+          fullySpecified: false,
+        },
+        include:
+          /node_modules\/(@react-navigation|react-native-screens|react-native-safe-area-context)/,
+      },
     ],
   },
   output: {
@@ -98,13 +107,19 @@ export default {
       filename: 'app2.container.js',
       exposes: {
         './UpcomingAppointments': './src/components/UpcomingAppointments',
+        './Claims': './src/navigation/navigation',
       },
       disableTypeGeneration: true,
       dts: false,
       shared: Object.fromEntries(
         Object.entries(pkg.dependencies).map(([dep, {version}]) => [
           dep,
-          {singleton: true, eager: true, requiredVersion: version},
+          {
+            singleton: true,
+            eager: true,
+            requiredVersion: version,
+            version: false,
+          },
         ]),
       ),
     }),

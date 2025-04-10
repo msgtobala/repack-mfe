@@ -11,7 +11,13 @@ const linking = {
     screens: {
       Home: '',
       AppOne: 'appone',
-      AppTwo: 'apptwo',
+      AppTwo: {
+        path: 'apptwo',
+        screens: {
+          ClaimsDetails: 'details',
+          ClaimsPayment: 'payment',
+        },
+      },
     },
   },
 };

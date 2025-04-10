@@ -28,7 +28,7 @@ const Header = () => {
         <Button onPress={() => navigation.navigate('Home')}>Home</Button>
         <Button onPress={() => navigation.navigate('AppOne')}>App 1</Button>
         <Button onPress={() => navigation.navigate('AppTwo')}>App 2</Button>
-        <Link screen="AppOne">App 1</Link>
+        {/* <Link screen="AppOne">App 1</Link> */}
       </View>
     </View>
   );
