@@ -1,0 +1,18 @@
+
+> app1@0.0.1 bundle /Users/248469/Documents/workspace/Polaris/rspack_mfe/apps/app1
+> pnpm run bundle:ios && pnpm run bundle:android
+
+
+> app1@0.0.1 bundle:ios /Users/248469/Documents/workspace/Polaris/rspack_mfe/apps/app1
+> react-native bundle --platform ios --entry-file index.js --dev false
+
+(node:9594) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[34mℹ[39m [90m[13:23:45.376Z][39m[1m[LoggerPlugin][22m Bundle built { time: [33m1253[39m } 
+
+> app1@0.0.1 bundle:android /Users/248469/Documents/workspace/Polaris/rspack_mfe/apps/app1
+> react-native bundle --platform android --entry-file index.js --dev false
+
+(node:9653) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[34mℹ[39m [90m[13:23:47.396Z][39m[1m[LoggerPlugin][22m Bundle built { time: [33m1109[39m } 

@@ -1,0 +1,1226 @@
+{
+  "apps/app1": {
+    "root": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.executor": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.options": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.options.script": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata.scriptContent": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata.runCommand": [
+      "apps/app1/package.json",
+      "nx/core/package-json"
+    ]
+  },
+  "apps/app2": {
+    "root": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.executor": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.options": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.options.script": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata.scriptContent": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata.runCommand": [
+      "apps/app2/package.json",
+      "nx/core/package-json"
+    ]
+  },
+  "apps/app3": {
+    "root": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:ios.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.executor": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.options": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.options.script": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata.scriptContent": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.bundle:android.metadata.runCommand": [
+      "apps/app3/package.json",
+      "nx/core/package-json"
+    ]
+  },
+  "apps/host": {
+    "root": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.executor": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.options.script": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.scriptContent": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.android.metadata.runCommand": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.executor": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.options.script": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.scriptContent": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.ios.metadata.runCommand": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.executor": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.options.script": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.scriptContent": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.pods.metadata.runCommand": [
+      "apps/host/package.json",
+      "nx/core/package-json"
+    ]
+  }
+}

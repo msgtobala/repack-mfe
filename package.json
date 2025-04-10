@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "mprocs": "^0.7.2"
+  },
+  "devDependencies": {
+    "nx": "^20.7.1"
   }
 }

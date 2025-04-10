@@ -1,0 +1,1120 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.7.1",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "app1": [
+        {
+          "file": "apps/app1/.bundle/config",
+          "hash": "9116505824108018199"
+        },
+        {
+          "file": "apps/app1/.eslintrc.js",
+          "hash": "17354359792012622799"
+        },
+        {
+          "file": "apps/app1/.gitignore",
+          "hash": "5050593768160088275"
+        },
+        {
+          "file": "apps/app1/.prettierrc.js",
+          "hash": "3440885991993665354"
+        },
+        {
+          "file": "apps/app1/.watchmanconfig",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "apps/app1/App.tsx",
+          "hash": "1107857227417755631"
+        },
+        {
+          "file": "apps/app1/Gemfile",
+          "hash": "6817897232805603090"
+        },
+        {
+          "file": "apps/app1/Gemfile.lock",
+          "hash": "6658389777351986562"
+        },
+        {
+          "file": "apps/app1/README.md",
+          "hash": "10575641548894021443"
+        },
+        {
+          "file": "apps/app1/__tests__/App.test.tsx",
+          "hash": "10792233639728460309"
+        },
+        {
+          "file": "apps/app1/android/app/build.gradle",
+          "hash": "4109236737644501050"
+        },
+        {
+          "file": "apps/app1/android/app/debug.keystore",
+          "hash": "5037686243849261810"
+        },
+        {
+          "file": "apps/app1/android/app/proguard-rules.pro",
+          "hash": "13814197385154279786"
+        },
+        {
+          "file": "apps/app1/android/app/src/debug/AndroidManifest.xml",
+          "hash": "9217300540490017338"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/AndroidManifest.xml",
+          "hash": "8439592262627536205"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/java/com/app1/MainActivity.kt",
+          "hash": "1583253299903891614"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/java/com/app1/MainApplication.kt",
+          "hash": "2070459597873488660"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+          "hash": "4466596183044014152"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+          "hash": "10788509195642110029"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+          "hash": "14348562046770238248"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+          "hash": "328692529308011025"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+          "hash": "11802043336826859502"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+          "hash": "13006206334539413900"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+          "hash": "1812825738055967771"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+          "hash": "6104457872863500683"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+          "hash": "2478168592410677995"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "hash": "12283149652938275290"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+          "hash": "7126668675123994836"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/values/strings.xml",
+          "hash": "4243178381502975893"
+        },
+        {
+          "file": "apps/app1/android/app/src/main/res/values/styles.xml",
+          "hash": "14052910750539201041"
+        },
+        {
+          "file": "apps/app1/android/build.gradle",
+          "hash": "14061614575239421399"
+        },
+        {
+          "file": "apps/app1/android/gradle.properties",
+          "hash": "13198926122350436103"
+        },
+        {
+          "file": "apps/app1/android/gradle/wrapper/gradle-wrapper.jar",
+          "hash": "5909086893679643373"
+        },
+        {
+          "file": "apps/app1/android/gradle/wrapper/gradle-wrapper.properties",
+          "hash": "96192965862793012"
+        },
+        {
+          "file": "apps/app1/android/gradlew",
+          "hash": "14628219315980192530"
+        },
+        {
+          "file": "apps/app1/android/gradlew.bat",
+          "hash": "3049992198610835351"
+        },
+        {
+          "file": "apps/app1/android/settings.gradle",
+          "hash": "1829098259669887717"
+        },
+        {
+          "file": "apps/app1/app.json",
+          "hash": "11423389853018475028"
+        },
+        {
+          "file": "apps/app1/babel.config.js",
+          "hash": "660512993117154326"
+        },
+        {
+          "file": "apps/app1/index.js",
+          "hash": "1658526766245455297"
+        },
+        {
+          "file": "apps/app1/ios/.xcode.env",
+          "hash": "2240437479405059044"
+        },
+        {
+          "file": "apps/app1/ios/Podfile",
+          "hash": "9267589422600219071"
+        },
+        {
+          "file": "apps/app1/ios/Podfile.lock",
+          "hash": "2471860834328814760"
+        },
+        {
+          "file": "apps/app1/ios/app1.xcodeproj/project.pbxproj",
+          "hash": "8556063993820179082"
+        },
+        {
+          "file": "apps/app1/ios/app1.xcodeproj/xcshareddata/xcschemes/app1.xcscheme",
+          "hash": "561259189795512609"
+        },
+        {
+          "file": "apps/app1/ios/app1.xcworkspace/contents.xcworkspacedata",
+          "hash": "12292673108223128055"
+        },
+        {
+          "file": "apps/app1/ios/app1/AppDelegate.swift",
+          "hash": "3766058431387010477"
+        },
+        {
+          "file": "apps/app1/ios/app1/Images.xcassets/AppIcon.appiconset/Contents.json",
+          "hash": "13651775502586994303"
+        },
+        {
+          "file": "apps/app1/ios/app1/Images.xcassets/Contents.json",
+          "hash": "10114040536141029740"
+        },
+        {
+          "file": "apps/app1/ios/app1/Info.plist",
+          "hash": "17566921223934123795"
+        },
+        {
+          "file": "apps/app1/ios/app1/LaunchScreen.storyboard",
+          "hash": "10152238213353952882"
+        },
+        {
+          "file": "apps/app1/ios/app1/PrivacyInfo.xcprivacy",
+          "hash": "16670914145149810597"
+        },
+        {
+          "file": "apps/app1/jest.config.js",
+          "hash": "3450453734004767423"
+        },
+        {
+          "file": "apps/app1/metro.config.js",
+          "hash": "10662824241545269552"
+        },
+        {
+          "file": "apps/app1/package.json",
+          "hash": "5111844414344446466",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@babel/plugin-syntax-typescript",
+            "npm:@babel/preset-env",
+            "npm:@babel/runtime",
+            "npm:@callstack/repack",
+            "npm:@react-native-community/cli",
+            "npm:@react-native-community/cli-platform-android",
+            "npm:@react-native-community/cli-platform-ios",
+            "npm:@react-native/babel-plugin-codegen@0.78.2",
+            "npm:@react-native/babel-preset@0.78.1",
+            "npm:@react-native/eslint-config@0.78.1",
+            "npm:@react-native/metro-config@0.78.1",
+            "npm:@react-native/typescript-config@0.78.1",
+            "npm:@rspack/core",
+            "npm:@swc/helpers",
+            "npm:@types/jest",
+            "npm:@types/react",
+            "npm:@types/react-test-renderer",
+            "npm:babel-plugin-syntax-hermes-parser@0.27.0",
+            "npm:eslint",
+            "npm:jest",
+            "npm:prettier",
+            "npm:react-test-renderer",
+            "npm:typescript",
+            "npm:@module-federation/enhanced",
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-paper"
+          ]
+        },
+        {
+          "file": "apps/app1/react-native.config.js",
+          "hash": "14626071073748747602"
+        },
+        {
+          "file": "apps/app1/rspack.config.mjs",
+          "hash": "10556786406579922579"
+        },
+        {
+          "file": "apps/app1/src/components/MemberCard.tsx",
+          "hash": "6021630795708108455"
+        },
+        {
+          "file": "apps/app1/tsconfig.json",
+          "hash": "1017391233137788567"
+        }
+      ],
+      "host": [
+        {
+          "file": "apps/host/.bundle/config",
+          "hash": "9116505824108018199"
+        },
+        {
+          "file": "apps/host/.eslintrc.js",
+          "hash": "17354359792012622799"
+        },
+        {
+          "file": "apps/host/.gitignore",
+          "hash": "5050593768160088275"
+        },
+        {
+          "file": "apps/host/.prettierrc.js",
+          "hash": "3440885991993665354"
+        },
+        {
+          "file": "apps/host/.watchmanconfig",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "apps/host/App.tsx",
+          "hash": "10298612992870163860"
+        },
+        {
+          "file": "apps/host/AppLoading.tsx",
+          "hash": "2461746442992378520"
+        },
+        {
+          "file": "apps/host/Gemfile",
+          "hash": "6817897232805603090"
+        },
+        {
+          "file": "apps/host/Gemfile.lock",
+          "hash": "6658389777351986562"
+        },
+        {
+          "file": "apps/host/README.md",
+          "hash": "10575641548894021443"
+        },
+        {
+          "file": "apps/host/__tests__/App.test.tsx",
+          "hash": "10792233639728460309"
+        },
+        {
+          "file": "apps/host/android/app/build.gradle",
+          "hash": "13643099477168692053"
+        },
+        {
+          "file": "apps/host/android/app/debug.keystore",
+          "hash": "5037686243849261810"
+        },
+        {
+          "file": "apps/host/android/app/proguard-rules.pro",
+          "hash": "13814197385154279786"
+        },
+        {
+          "file": "apps/host/android/app/src/debug/AndroidManifest.xml",
+          "hash": "9217300540490017338"
+        },
+        {
+          "file": "apps/host/android/app/src/main/AndroidManifest.xml",
+          "hash": "8439592262627536205"
+        },
+        {
+          "file": "apps/host/android/app/src/main/java/com/host/MainActivity.kt",
+          "hash": "8599656668775132721"
+        },
+        {
+          "file": "apps/host/android/app/src/main/java/com/host/MainApplication.kt",
+          "hash": "12600953474759096830"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+          "hash": "4466596183044014152"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+          "hash": "10788509195642110029"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+          "hash": "14348562046770238248"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+          "hash": "328692529308011025"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+          "hash": "11802043336826859502"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+          "hash": "13006206334539413900"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+          "hash": "1812825738055967771"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+          "hash": "6104457872863500683"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+          "hash": "2478168592410677995"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "hash": "12283149652938275290"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+          "hash": "7126668675123994836"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/values/strings.xml",
+          "hash": "10823096906561819500"
+        },
+        {
+          "file": "apps/host/android/app/src/main/res/values/styles.xml",
+          "hash": "14052910750539201041"
+        },
+        {
+          "file": "apps/host/android/build.gradle",
+          "hash": "14061614575239421399"
+        },
+        {
+          "file": "apps/host/android/gradle.properties",
+          "hash": "13198926122350436103"
+        },
+        {
+          "file": "apps/host/android/gradle/wrapper/gradle-wrapper.jar",
+          "hash": "5909086893679643373"
+        },
+        {
+          "file": "apps/host/android/gradle/wrapper/gradle-wrapper.properties",
+          "hash": "96192965862793012"
+        },
+        {
+          "file": "apps/host/android/gradlew",
+          "hash": "14628219315980192530"
+        },
+        {
+          "file": "apps/host/android/gradlew.bat",
+          "hash": "3049992198610835351"
+        },
+        {
+          "file": "apps/host/android/settings.gradle",
+          "hash": "12563076197614352680"
+        },
+        {
+          "file": "apps/host/app.json",
+          "hash": "13576783183046343247"
+        },
+        {
+          "file": "apps/host/babel.config.js",
+          "hash": "660512993117154326"
+        },
+        {
+          "file": "apps/host/bootstrap.js",
+          "hash": "5027493398013283170"
+        },
+        {
+          "file": "apps/host/index.js",
+          "hash": "6398104233711798433"
+        },
+        {
+          "file": "apps/host/ios/.xcode.env",
+          "hash": "2240437479405059044"
+        },
+        {
+          "file": "apps/host/ios/Podfile",
+          "hash": "11012905189152815291"
+        },
+        {
+          "file": "apps/host/ios/Podfile.lock",
+          "hash": "6861103372059279361"
+        },
+        {
+          "file": "apps/host/ios/host.xcodeproj/project.pbxproj",
+          "hash": "2006221893630770847"
+        },
+        {
+          "file": "apps/host/ios/host.xcodeproj/xcshareddata/xcschemes/host.xcscheme",
+          "hash": "13561271212941180095"
+        },
+        {
+          "file": "apps/host/ios/host.xcworkspace/contents.xcworkspacedata",
+          "hash": "14470395761036543709"
+        },
+        {
+          "file": "apps/host/ios/host/AppDelegate.swift",
+          "hash": "2140861853318009108"
+        },
+        {
+          "file": "apps/host/ios/host/Images.xcassets/AppIcon.appiconset/Contents.json",
+          "hash": "13651775502586994303"
+        },
+        {
+          "file": "apps/host/ios/host/Images.xcassets/Contents.json",
+          "hash": "10114040536141029740"
+        },
+        {
+          "file": "apps/host/ios/host/Info.plist",
+          "hash": "14095990606844534644"
+        },
+        {
+          "file": "apps/host/ios/host/LaunchScreen.storyboard",
+          "hash": "10463135833714615739"
+        },
+        {
+          "file": "apps/host/ios/host/PrivacyInfo.xcprivacy",
+          "hash": "16670914145149810597"
+        },
+        {
+          "file": "apps/host/jest.config.js",
+          "hash": "3450453734004767423"
+        },
+        {
+          "file": "apps/host/metro.config.js",
+          "hash": "3172959589949050190"
+        },
+        {
+          "file": "apps/host/package.json",
+          "hash": "2045304641650007482",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@babel/plugin-syntax-typescript",
+            "npm:@babel/preset-env",
+            "npm:@babel/runtime",
+            "npm:@callstack/repack",
+            "npm:@react-native-community/cli",
+            "npm:@react-native-community/cli-platform-android",
+            "npm:@react-native-community/cli-platform-ios",
+            "npm:@react-native/babel-plugin-codegen@0.78.2",
+            "npm:@react-native/babel-preset@0.78.1",
+            "npm:@react-native/codegen@0.78.2",
+            "npm:@react-native/eslint-config@0.78.1",
+            "npm:@react-native/gradle-plugin@0.78.2",
+            "npm:@react-native/metro-config@0.78.1",
+            "npm:@react-native/typescript-config@0.78.1",
+            "npm:@rspack/core",
+            "npm:@swc/helpers",
+            "npm:@types/jest",
+            "npm:@types/react",
+            "npm:@types/react-test-renderer",
+            "npm:babel-plugin-syntax-hermes-parser@0.27.0",
+            "npm:eslint",
+            "npm:jest",
+            "npm:prettier",
+            "npm:react-test-renderer",
+            "npm:typescript",
+            "npm:@module-federation/enhanced",
+            "npm:@module-federation/runtime@0.10.0",
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-paper"
+          ]
+        },
+        {
+          "file": "apps/host/react-native.config.js",
+          "hash": "14626071073748747602"
+        },
+        {
+          "file": "apps/host/rspack.config.mjs",
+          "hash": "10135071174848451350"
+        },
+        {
+          "file": "apps/host/tsconfig.json",
+          "hash": "1017391233137788567"
+        }
+      ],
+      "app3": [
+        {
+          "file": "apps/app3/.bundle/config",
+          "hash": "9116505824108018199"
+        },
+        {
+          "file": "apps/app3/.eslintrc.js",
+          "hash": "17354359792012622799"
+        },
+        {
+          "file": "apps/app3/.gitignore",
+          "hash": "5050593768160088275"
+        },
+        {
+          "file": "apps/app3/.prettierrc.js",
+          "hash": "3440885991993665354"
+        },
+        {
+          "file": "apps/app3/.watchmanconfig",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "apps/app3/App.tsx",
+          "hash": "4634882053849847847"
+        },
+        {
+          "file": "apps/app3/Gemfile",
+          "hash": "6817897232805603090"
+        },
+        {
+          "file": "apps/app3/Gemfile.lock",
+          "hash": "6658389777351986562"
+        },
+        {
+          "file": "apps/app3/README.md",
+          "hash": "10575641548894021443"
+        },
+        {
+          "file": "apps/app3/__tests__/App.test.tsx",
+          "hash": "10792233639728460309"
+        },
+        {
+          "file": "apps/app3/android/app/build.gradle",
+          "hash": "16646450185309064330"
+        },
+        {
+          "file": "apps/app3/android/app/debug.keystore",
+          "hash": "5037686243849261810"
+        },
+        {
+          "file": "apps/app3/android/app/proguard-rules.pro",
+          "hash": "13814197385154279786"
+        },
+        {
+          "file": "apps/app3/android/app/src/debug/AndroidManifest.xml",
+          "hash": "9217300540490017338"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/AndroidManifest.xml",
+          "hash": "8439592262627536205"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/java/com/app3/MainActivity.kt",
+          "hash": "726187417693748065"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/java/com/app3/MainApplication.kt",
+          "hash": "5125850838134287003"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+          "hash": "4466596183044014152"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+          "hash": "10788509195642110029"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+          "hash": "14348562046770238248"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+          "hash": "328692529308011025"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+          "hash": "11802043336826859502"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+          "hash": "13006206334539413900"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+          "hash": "1812825738055967771"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+          "hash": "6104457872863500683"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+          "hash": "2478168592410677995"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "hash": "12283149652938275290"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+          "hash": "7126668675123994836"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/values/strings.xml",
+          "hash": "4530020036335092373"
+        },
+        {
+          "file": "apps/app3/android/app/src/main/res/values/styles.xml",
+          "hash": "14052910750539201041"
+        },
+        {
+          "file": "apps/app3/android/build.gradle",
+          "hash": "14061614575239421399"
+        },
+        {
+          "file": "apps/app3/android/gradle.properties",
+          "hash": "13198926122350436103"
+        },
+        {
+          "file": "apps/app3/android/gradle/wrapper/gradle-wrapper.jar",
+          "hash": "5909086893679643373"
+        },
+        {
+          "file": "apps/app3/android/gradle/wrapper/gradle-wrapper.properties",
+          "hash": "96192965862793012"
+        },
+        {
+          "file": "apps/app3/android/gradlew",
+          "hash": "14628219315980192530"
+        },
+        {
+          "file": "apps/app3/android/gradlew.bat",
+          "hash": "3049992198610835351"
+        },
+        {
+          "file": "apps/app3/android/settings.gradle",
+          "hash": "9528938426617533508"
+        },
+        {
+          "file": "apps/app3/app.json",
+          "hash": "17124994482144681786"
+        },
+        {
+          "file": "apps/app3/babel.config.js",
+          "hash": "17506418141289760001"
+        },
+        {
+          "file": "apps/app3/index.js",
+          "hash": "1658526766245455297"
+        },
+        {
+          "file": "apps/app3/ios/.xcode.env",
+          "hash": "2240437479405059044"
+        },
+        {
+          "file": "apps/app3/ios/Podfile",
+          "hash": "4771655608125296328"
+        },
+        {
+          "file": "apps/app3/ios/Podfile.lock",
+          "hash": "13476043977933099134"
+        },
+        {
+          "file": "apps/app3/ios/app3.xcodeproj/project.pbxproj",
+          "hash": "13182990755054652061"
+        },
+        {
+          "file": "apps/app3/ios/app3.xcodeproj/xcshareddata/xcschemes/app3.xcscheme",
+          "hash": "4408938608791372026"
+        },
+        {
+          "file": "apps/app3/ios/app3.xcworkspace/contents.xcworkspacedata",
+          "hash": "11492971482902533978"
+        },
+        {
+          "file": "apps/app3/ios/app3/AppDelegate.swift",
+          "hash": "4386458869583834293"
+        },
+        {
+          "file": "apps/app3/ios/app3/Images.xcassets/AppIcon.appiconset/Contents.json",
+          "hash": "13651775502586994303"
+        },
+        {
+          "file": "apps/app3/ios/app3/Images.xcassets/Contents.json",
+          "hash": "10114040536141029740"
+        },
+        {
+          "file": "apps/app3/ios/app3/Info.plist",
+          "hash": "12008665116507574691"
+        },
+        {
+          "file": "apps/app3/ios/app3/LaunchScreen.storyboard",
+          "hash": "17327138015537757620"
+        },
+        {
+          "file": "apps/app3/ios/app3/PrivacyInfo.xcprivacy",
+          "hash": "16670914145149810597"
+        },
+        {
+          "file": "apps/app3/jest.config.js",
+          "hash": "3450453734004767423"
+        },
+        {
+          "file": "apps/app3/metro.config.js",
+          "hash": "10662824241545269552"
+        },
+        {
+          "file": "apps/app3/package.json",
+          "hash": "9554028602976586720",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@babel/preset-env",
+            "npm:@babel/runtime",
+            "npm:@callstack/repack",
+            "npm:@react-native-community/cli",
+            "npm:@react-native-community/cli-platform-android",
+            "npm:@react-native-community/cli-platform-ios",
+            "npm:@react-native/babel-preset@0.78.2",
+            "npm:@react-native/eslint-config@0.78.2",
+            "npm:@react-native/metro-config@0.78.2",
+            "npm:@react-native/typescript-config@0.78.2",
+            "npm:@rspack/core",
+            "npm:@swc/helpers",
+            "npm:@types/jest",
+            "npm:@types/react",
+            "npm:@types/react-test-renderer",
+            "npm:eslint",
+            "npm:jest",
+            "npm:prettier",
+            "npm:react-test-renderer",
+            "npm:typescript",
+            "npm:@module-federation/enhanced",
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-paper"
+          ]
+        },
+        {
+          "file": "apps/app3/react-native.config.js",
+          "hash": "14626071073748747602"
+        },
+        {
+          "file": "apps/app3/rspack.config.mjs",
+          "hash": "16929763554241382994"
+        },
+        {
+          "file": "apps/app3/src/components/UpcomingAppointments.tsx",
+          "hash": "8381797515396348983"
+        },
+        {
+          "file": "apps/app3/tsconfig.json",
+          "hash": "1017391233137788567"
+        }
+      ],
+      "app2": [
+        {
+          "file": "apps/app2/.bundle/config",
+          "hash": "9116505824108018199"
+        },
+        {
+          "file": "apps/app2/.eslintrc.js",
+          "hash": "17354359792012622799"
+        },
+        {
+          "file": "apps/app2/.gitignore",
+          "hash": "5050593768160088275"
+        },
+        {
+          "file": "apps/app2/.prettierrc.js",
+          "hash": "3440885991993665354"
+        },
+        {
+          "file": "apps/app2/.watchmanconfig",
+          "hash": "15753941481085060538"
+        },
+        {
+          "file": "apps/app2/App.tsx",
+          "hash": "12875776321710970874"
+        },
+        {
+          "file": "apps/app2/Gemfile",
+          "hash": "6817897232805603090"
+        },
+        {
+          "file": "apps/app2/Gemfile.lock",
+          "hash": "6658389777351986562"
+        },
+        {
+          "file": "apps/app2/README.md",
+          "hash": "10575641548894021443"
+        },
+        {
+          "file": "apps/app2/__tests__/App.test.tsx",
+          "hash": "10792233639728460309"
+        },
+        {
+          "file": "apps/app2/android/app/build.gradle",
+          "hash": "1278147535835192346"
+        },
+        {
+          "file": "apps/app2/android/app/debug.keystore",
+          "hash": "5037686243849261810"
+        },
+        {
+          "file": "apps/app2/android/app/proguard-rules.pro",
+          "hash": "13814197385154279786"
+        },
+        {
+          "file": "apps/app2/android/app/src/debug/AndroidManifest.xml",
+          "hash": "9217300540490017338"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/AndroidManifest.xml",
+          "hash": "8439592262627536205"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/java/com/app2/MainActivity.kt",
+          "hash": "8313557315691353770"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/java/com/app2/MainApplication.kt",
+          "hash": "16610390319086809230"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+          "hash": "4466596183044014152"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+          "hash": "10788509195642110029"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+          "hash": "14348562046770238248"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+          "hash": "328692529308011025"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+          "hash": "11802043336826859502"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+          "hash": "13006206334539413900"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+          "hash": "1812825738055967771"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+          "hash": "6104457872863500683"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+          "hash": "2478168592410677995"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "hash": "12283149652938275290"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+          "hash": "7126668675123994836"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/values/strings.xml",
+          "hash": "15189665412185834947"
+        },
+        {
+          "file": "apps/app2/android/app/src/main/res/values/styles.xml",
+          "hash": "14052910750539201041"
+        },
+        {
+          "file": "apps/app2/android/build.gradle",
+          "hash": "14061614575239421399"
+        },
+        {
+          "file": "apps/app2/android/gradle.properties",
+          "hash": "13198926122350436103"
+        },
+        {
+          "file": "apps/app2/android/gradle/wrapper/gradle-wrapper.jar",
+          "hash": "5909086893679643373"
+        },
+        {
+          "file": "apps/app2/android/gradle/wrapper/gradle-wrapper.properties",
+          "hash": "96192965862793012"
+        },
+        {
+          "file": "apps/app2/android/gradlew",
+          "hash": "14628219315980192530"
+        },
+        {
+          "file": "apps/app2/android/gradlew.bat",
+          "hash": "3049992198610835351"
+        },
+        {
+          "file": "apps/app2/android/settings.gradle",
+          "hash": "4210690688956136729"
+        },
+        {
+          "file": "apps/app2/app.json",
+          "hash": "14035756544741391684"
+        },
+        {
+          "file": "apps/app2/babel.config.js",
+          "hash": "660512993117154326"
+        },
+        {
+          "file": "apps/app2/index.js",
+          "hash": "1658526766245455297"
+        },
+        {
+          "file": "apps/app2/ios/.xcode.env",
+          "hash": "2240437479405059044"
+        },
+        {
+          "file": "apps/app2/ios/Podfile",
+          "hash": "215983333393463652"
+        },
+        {
+          "file": "apps/app2/ios/Podfile.lock",
+          "hash": "7201612710967274663"
+        },
+        {
+          "file": "apps/app2/ios/app2.xcodeproj/project.pbxproj",
+          "hash": "13140916919819239635"
+        },
+        {
+          "file": "apps/app2/ios/app2.xcodeproj/xcshareddata/xcschemes/app2.xcscheme",
+          "hash": "11621474487458183111"
+        },
+        {
+          "file": "apps/app2/ios/app2.xcworkspace/contents.xcworkspacedata",
+          "hash": "278492440950630565"
+        },
+        {
+          "file": "apps/app2/ios/app2/AppDelegate.swift",
+          "hash": "2294251515600482088"
+        },
+        {
+          "file": "apps/app2/ios/app2/Images.xcassets/AppIcon.appiconset/Contents.json",
+          "hash": "13651775502586994303"
+        },
+        {
+          "file": "apps/app2/ios/app2/Images.xcassets/Contents.json",
+          "hash": "10114040536141029740"
+        },
+        {
+          "file": "apps/app2/ios/app2/Info.plist",
+          "hash": "10669723966732977493"
+        },
+        {
+          "file": "apps/app2/ios/app2/LaunchScreen.storyboard",
+          "hash": "17680613927619734135"
+        },
+        {
+          "file": "apps/app2/ios/app2/PrivacyInfo.xcprivacy",
+          "hash": "16670914145149810597"
+        },
+        {
+          "file": "apps/app2/jest.config.js",
+          "hash": "3450453734004767423"
+        },
+        {
+          "file": "apps/app2/metro.config.js",
+          "hash": "10662824241545269552"
+        },
+        {
+          "file": "apps/app2/package.json",
+          "hash": "13522669029268861110",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@babel/plugin-syntax-typescript",
+            "npm:@babel/preset-env",
+            "npm:@babel/runtime",
+            "npm:@callstack/repack",
+            "npm:@react-native-community/cli",
+            "npm:@react-native-community/cli-platform-android",
+            "npm:@react-native-community/cli-platform-ios",
+            "npm:@react-native/babel-plugin-codegen@0.78.2",
+            "npm:@react-native/babel-preset@0.78.1",
+            "npm:@react-native/eslint-config@0.78.1",
+            "npm:@react-native/metro-config@0.78.1",
+            "npm:@react-native/typescript-config@0.78.1",
+            "npm:@rspack/core",
+            "npm:@swc/helpers",
+            "npm:@types/jest",
+            "npm:@types/react",
+            "npm:@types/react-test-renderer",
+            "npm:babel-plugin-syntax-hermes-parser@0.27.0",
+            "npm:eslint",
+            "npm:jest",
+            "npm:prettier",
+            "npm:react-test-renderer",
+            "npm:typescript",
+            "npm:@module-federation/enhanced",
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-paper"
+          ]
+        },
+        {
+          "file": "apps/app2/react-native.config.js",
+          "hash": "14626071073748747602"
+        },
+        {
+          "file": "apps/app2/rspack.config.mjs",
+          "hash": "3611049452581750322"
+        },
+        {
+          "file": "apps/app2/src/components/UpcomingAppointments.tsx",
+          "hash": "16955349783492440769"
+        },
+        {
+          "file": "apps/app2/tsconfig.json",
+          "hash": "1017391233137788567"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".DS_Store",
+        "hash": "2292499871269868313"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "8813556467458457165"
+      },
+      {
+        "file": "apps/.DS_Store",
+        "hash": "4127059729202251278"
+      },
+      {
+        "file": "mprocs/bundle-remotes.yaml",
+        "hash": "2057471837412072488"
+      },
+      {
+        "file": "mprocs/start.yaml",
+        "hash": "12181916274316497412"
+      },
+      {
+        "file": "package.json",
+        "hash": "14233612207343552009"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "16193705853882948926"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "3710615048934191792"
+      }
+    ]
+  }
+}

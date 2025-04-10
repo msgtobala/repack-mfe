@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx bundle app1",
+    "startTime": "2025-04-07T13:23:41.741Z",
+    "endTime": "2025-04-07T13:23:47.438Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "app1:bundle",
+      "target": "bundle",
+      "projectName": "app1",
+      "hash": "9830982367484829306",
+      "startTime": "2025-04-07T13:23:42.039Z",
+      "endTime": "2025-04-07T13:23:47.438Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
