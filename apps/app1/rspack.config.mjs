@@ -7,6 +7,7 @@ const pkg = require('./package.json');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const diabledPackages = ['@module-federation/runtime'];
 
 export default env => {
   const {mode} = env;
@@ -39,17 +40,28 @@ export default env => {
         name: 'app1',
         dts: false,
         filename: 'app1.container.js.bundle',
-        defaultRuntimePlugins: ["@callstack/repack/mf/resolver-plugin", "@callstack/repack/mf/core-plugin"],
+        defaultRuntimePlugins: [
+          '@callstack/repack/mf/resolver-plugin',
+          '@callstack/repack/mf/core-plugin',
+        ],
         exposes: {
           './MemberCard': './src/components/MemberCard',
         },
         shared: Object.fromEntries(
-          Object.entries(pkg.dependencies).map(([dep, version]) => {
-            return [
-              dep,
-              {singleton: true, eager: true, requiredVersion: version},
-            ];
-          }),
+          Object.entries(pkg.dependencies)
+            .filter(([dep]) => !diabledPackages.includes(dep))
+            .map(([dep, version]) => {
+              console.log(dep, version);
+              return [
+                dep,
+                {
+                  singleton: true,
+                  eager: true,
+                  requiredVersion: version,
+                  version: false,
+                },
+              ];
+            }),
         ),
       }),
     ],

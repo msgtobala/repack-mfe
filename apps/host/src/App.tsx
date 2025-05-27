@@ -14,7 +14,7 @@ const linking = {
       AppTwo: {
         path: 'apptwo',
         screens: {
-          ClaimsDetails: 'details',
+          ClaimsDetails: '',
           ClaimsPayment: 'payment',
         },
       },

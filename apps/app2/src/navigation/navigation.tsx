@@ -13,20 +13,18 @@ const Stack = createNativeStackNavigator();
 const RootStack = () => {
   return (
     <>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen
-            name="ClaimsDetails"
-            component={ClaimsDetailsScreen}
-            options={{headerShown: false}}
-          />
-          <Stack.Screen
-            name="ClaimsPayment"
-            component={ClaimsPaymentScreen}
-            options={{headerShown: false}}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Stack.Navigator initialRouteName="ClaimsDetails">
+        <Stack.Screen
+          name="ClaimsDetails"
+          component={ClaimsDetailsScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ClaimsPayment"
+          component={ClaimsPaymentScreen}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
     </>
   );
 };

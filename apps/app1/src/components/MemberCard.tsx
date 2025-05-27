@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect, Suspense} from 'react';
 import {
   View,
   Text,
@@ -8,8 +8,12 @@ import {
   Image,
   ScrollView,
   Button,
+  Platform,
 } from 'react-native';
 import {Chip} from 'react-native-paper';
+import {init, preloadRemote} from '@module-federation/runtime';
+import {withRetry} from './loadRemote';
+const CameraScreen = withRetry('host/Camera')();
 
 const {width} = Dimensions.get('window');
 const isMobile = width < 768;
@@ -54,6 +58,37 @@ const data = [
   },
 ];
 
+init({
+  name: 'app1',
+  remotes: [
+    {
+      name: 'host',
+      entry: Platform.select({
+        android: 'http://127.0.0.1:8081/android/mf-manifest.json',
+        ios: 'http://127.0.0.1:8081/ios/mf-manifest.json',
+        default: 'http://localhost:4200/mf-manifest.json',
+      }),
+    },
+  ],
+});
+
+const preloadRemotes = async () => {
+  try {
+    await preloadRemote([
+      {
+        nameOrAlias: 'host',
+        filter(assetUrl: string) {
+          console.log('Preloading asset:', assetUrl);
+          return assetUrl.indexOf('ignore') === -1;
+        },
+        depsRemote: [],
+      },
+    ]);
+  } catch (error) {
+    console.error('Error preloading remotes:', error);
+  }
+};
+
 const MemberCard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const flatListRef = useRef(null);
@@ -63,10 +98,12 @@ const MemberCard = () => {
     const index = Math.round(scrollPosition / (itemWidth + itemMargin));
     setActiveIndex(index);
   };
+  useEffect(() => {
+    preloadRemotes();
+  }, []);
 
   return (
     <ScrollView style={styles.container}>
-      {/* <CameraApp /> */}
       <View>
         <FlatList
           ref={flatListRef}
@@ -101,6 +138,7 @@ const MemberCard = () => {
             </View>
           )}
         />
+
         <View style={styles.dotContainer}>
           {data.map((_, index) => (
             <View
@@ -112,6 +150,15 @@ const MemberCard = () => {
             />
           ))}
         </View>
+        <Suspense fallback={<Text>Loading...</Text>}>
+          <CameraScreen
+            context={{
+              userData: {},
+              environment: {},
+              navigationHelper: {},
+            }}
+          />
+        </Suspense>
         <View style={styles.cardContainer}>
           <View style={styles.profileSection}>
             <Image

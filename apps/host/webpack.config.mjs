@@ -12,12 +12,7 @@ const compileNodeModules = [].map(moduleName =>
 );
 // const {ModuleFederationPlugin} = require('webpack').container;
 
-const diabledPackages = [
-  '@module-federation/runtime',
-  '@react-navigation/elements',
-  '@react-navigation/native',
-  '@react-navigation/native-stack',
-];
+const diabledPackages = ['@module-federation/runtime'];
 
 const babelLoaderConfiguration = {
   test: /\.[jt]sx?$/,
@@ -111,7 +106,12 @@ export default {
           .map(([dep, {version}]) => {
             return [
               dep,
-              {singleton: true, eager: true, requiredVersion: version},
+              {
+                singleton: true,
+                eager: true,
+                requiredVersion: version,
+                version: false,
+              },
             ];
           }),
       ),

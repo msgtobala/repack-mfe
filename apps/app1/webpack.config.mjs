@@ -105,7 +105,12 @@ export default {
       shared: Object.fromEntries(
         Object.entries(pkg.dependencies).map(([dep, {version}]) => [
           dep,
-          {singleton: true, eager: true, requiredVersion: version},
+          {
+            singleton: true,
+            eager: true,
+            requiredVersion: version,
+            version: false,
+          },
         ]),
       ),
     }),

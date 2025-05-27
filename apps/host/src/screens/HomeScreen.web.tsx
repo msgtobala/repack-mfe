@@ -18,10 +18,7 @@ const HomeScreen = () => {
       <StatusBar backgroundColor={backgroundStyle.backgroundColor} />
 
       <View>
-        <Section title="App1">Home Page</Section>
-        <Suspense fallback={<Text>Loading...</Text>}>
-          <MemberCardComponent />
-        </Suspense>
+        <Section title="App1">Web Page</Section>
       </View>
     </View>
   );

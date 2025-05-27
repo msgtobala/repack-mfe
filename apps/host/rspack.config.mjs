@@ -9,12 +9,7 @@ const pkg = require('./package.json');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const diabledPackages = [
-  '@module-federation/runtime',
-  '@react-navigation/elements',
-  '@react-navigation/native',
-  '@react-navigation/native-stack',
-];
+const diabledPackages = ['@module-federation/runtime'];
 
 export default env => {
   const {mode, platform = 'android'} = env;
@@ -47,6 +42,13 @@ export default env => {
         name: 'host',
         dts: false,
         filename: 'host.container.js.bundle',
+        defaultRuntimePlugins: [
+          '@callstack/repack/mf/resolver-plugin',
+          '@callstack/repack/mf/core-plugin',
+        ],
+        exposes: {
+          './Camera': './src/camera/load-camera',
+        },
         remotes: {},
         shared: Object.fromEntries(
           Object.entries(pkg.dependencies)
@@ -55,7 +57,12 @@ export default env => {
               console.log(dep, version);
               return [
                 dep,
-                {singleton: true, eager: true, requiredVersion: version},
+                {
+                  singleton: true,
+                  eager: true,
+                  requiredVersion: version,
+                  version: false,
+                },
               ];
             }),
         ),
